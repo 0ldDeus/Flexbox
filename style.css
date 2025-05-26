@@ -1,0 +1,142 @@
+ .Block {
+display: block;
+justify-content: space-between;
+align-items: center;
+height: 100px;
+background-color: lightgrey;
+}
+
+.Inline{
+display: inline;
+justify-content: space-between;
+align-items: center;
+height: 100px;
+background-color: lightgrey;
+}
+
+.Flex{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100px;
+background-color: lightgrey;
+}
+
+.container {
+display: flex;
+flex-flow:column wrap;
+background-color: lightgray;
+padding: 10px;
+}
+
+.box {
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+.V {
+    flex: 0 0 30%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+
+}
+
+.box1 {
+display: flex;
+margin: 10px;
+padding: 20px;
+border: 1px solid #ccc;
+}
+
+.Day1 {
+flex-grow: 100px;
+}
+
+.Day2 {
+flex-shrink: 100px;
+}
+
+.Day3 {
+ flex-basis: 100px;
+}
+
+.Day4 {
+    flex: 1 1 200px;
+}
+
+.box2 {
+display: flex;
+background-color: lightgray;
+padding: 10px;
+}
+
+.Level1 {
+flex: 0 0 50%; /* Элемент занимает 50% ширины контейнера */
+background-color: steelblue;
+color: white;
+padding: 20px;
+text-align: center;
+font-size: 20px;
+}
+
+.Level2 {
+flex: 1; /* Элемент занимает оставшееся пространство и растягивается */
+background-color: darkcyan;
+color: white;
+padding: 20px;
+text-align: center;
+font-size: 20px;
+}
+
+.Level3 {
+flex: 0 0 100px; /* Фиксированная ширина 100px */
+background-color: darkorange;
+color: white;
+padding: 20px;
+text-align: center;
+font-size: 20px;
+}
+
+.menu-container {
+display: flex;
+justify-content: space-around; /* Равномерное распределение ссылок */
+align-items: center; /* Выравнивание элементов по вертикали */
+background-color:antiquewhite;
+padding: 10px;
+}
+
+.menu-container a {
+text-decoration: none;
+color: white;
+background-color: steelblue;
+padding: 10px 20px;
+font-size: 18px;
+border-radius: 5px;
+transition: 0.3s;
+}
+
+.menu-container a:hover {
+background-color: darkblue;
+}
+
+.gallery-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between; /* Равномерное распределение карточек */
+gap: 10px; /* Отступы между карточками */
+background-color: lightgray;
+padding: 20px;
+}
+
+.card {
+flex: 1 1 300px; /* flex-grow: 1; flex-shrink: 1; flex-basis: 300px */
+background-color: white;
+border: 1px solid #ccc;
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
